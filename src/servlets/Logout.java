@@ -34,7 +34,7 @@ public class Logout extends HttpServlet {
 		if(sesion.getAttribute("user")!=null){
 			sesion.setAttribute("user", null);
 			sesion.setAttribute("error", null);
-			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Home");
+			RequestDispatcher dispatcher = getServletContext().getRequestDispatcher("/Login");
 			dispatcher.forward(request, response);
 		
 		}else{
