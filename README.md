@@ -1,1 +1,1 @@
-**Proyecto Cartelera Virtual - Facultad de Informática UNLP **
+**Proyecto Cartelera Virtual - Facultad de Informática UNLP**
