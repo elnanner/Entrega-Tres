@@ -44,10 +44,32 @@
        			<% if(comments.size()==0){%>
        		          No hay comentarios
        			<% }else{ %>
-       			       <ul>
+       			       <ul class="timeline">
        		            <% for(int indice=0;indice<comments.size();indice++){ %>
-       		               <li> <%= " el usuario: "+comments.get(indice).getAutor()+" dijo ..."+comments.get(indice).getTexto() %></li>
-       		            <%} %>
+       		              
+      						
+       						
+       		               <%if (indice%2==0){ %>
+       		                           <li> 
+       		                       		
+       		                       		  <div class="timeline-panel">
+       		                       			<%= comments.get(indice).getAutor()+" dijo:"+comments.get(indice).getTexto() %>
+       		                       			   </div>
+       		                       			</li>
+       		                          
+       		                 <%}else{ %>
+       		                          <li class="timeline-inverted"> 
+       		                          		<div class="timeline-panel">
+       		                          		
+       		                          				<%= comments.get(indice).getAutor()+" dijo:"+comments.get(indice).getTexto() %>
+       		                          	 </div>			
+       		                          	</li>
+       		                              
+       		                 <%} %>
+       		               
+       		                 
+       		             
+       		             <%} %>
        		            </ul>
        		    <% } %>
        		    

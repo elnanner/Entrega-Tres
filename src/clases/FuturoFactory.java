@@ -1,14 +1,17 @@
 package clases;
 
 
+import java.util.Enumeration;
 import java.util.Hashtable;
 
 public class FuturoFactory {
 	
 	protected Hashtable<String, Pizarra> pizarras;
+	protected Hashtable<String, Pizarra> pizarrasPorId;
 	
 	public FuturoFactory(){
 		pizarras=new  Hashtable<String, Pizarra>();
+		pizarrasPorId=new  Hashtable<String, Pizarra>();
 		
 		Pizarra pizarraMaterias=new Pizarra("Materias", "En esta cartelera encontrarás info sobre las materias","materias", "/Home/materias",true,"P2");
 		pizarras.put("Materias",pizarraMaterias);
@@ -16,6 +19,7 @@ public class FuturoFactory {
 		Pizarra pizarraOfertas=new Pizarra("Ofertas laborales", "En esta cartelera encontrarás info sobre las ofertas laborales disponibles", "ofertas laborales","/Home/Ofertas laborales",true,"P3");
     	Nota nota=new Nota("Ofertas", "contratar alumnos", "Empresa grosa quiere contratar alumnos","Empresa grosa","N1");
     	nota.addComment(new Comentario("soy un comentario", "rama"));
+    	nota.addComment(new Comentario("soy otro comentario", "lu"));
 		pizarraOfertas.addNota(nota);
     	pizarraOfertas.addNota(new Nota("Ofertas", "explotar alumnos", "Empresa quiere explotar alumnos","Empresa explotadora :O","N2"));
     	pizarras.put("Ofertas",pizarraOfertas);
@@ -37,9 +41,19 @@ public class FuturoFactory {
     	pizarraHome.addPizarra(pizarraOtros);
 		pizarras.put("Home",pizarraHome);
 		
+		Enumeration<String> llaves = pizarras.keys();
+		Pizarra pizarraActual=null;
+		while (llaves.hasMoreElements()) {
+			pizarraActual=(Pizarra)pizarras.get(llaves.nextElement());
+			pizarrasPorId.put(pizarraActual.getId(),pizarraActual);
+		  //System.out.println(""+"hashtable llaves: " + llaves.nextElement());
+		}
 		
 	}
 	
+	public Pizarra getPizarraId(String id){
+		return (Pizarra)pizarrasPorId.get(id);
+	}
 
 	public Pizarra getPizarra(String namePizarra){
 		//en un futuro va a conectar con la BD
