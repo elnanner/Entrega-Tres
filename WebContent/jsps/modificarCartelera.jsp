@@ -16,13 +16,13 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
     
-    <title>Alta cartelera</title>
+    <title>Modificar cartelera</title>
 </head>
 
 <body>
 
 <%@ include file="Header.jsp" %>
-<h1 style="text-align:center"> formualrio alta cartelera</h1>
+<h1 style="text-align:center"> formualrio modificar cartelera</h1>
 
 <div class="container">
 <form action="#" method="post">
