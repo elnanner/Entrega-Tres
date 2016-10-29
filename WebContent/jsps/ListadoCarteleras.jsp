@@ -9,15 +9,24 @@
     <!-- Bootstrap Core CSS -->
     <link href="../css/timeLine.css" rel="stylesheet">
     
+    
+     <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+    
     <title>Listado carteleras</title>
 </head>
 
 <body>
 
 <%@ include file="Header.jsp" %>
-<h1 style="text-align:center"> Listado carteleras</h1>
- <!-- Page Content -->
+
+<!-- Page Content -->
     <div class="container">
+<h1 style="text-align:center"> Listado carteleras</h1>
+ 
 <table class="table table-striped">
   <thead>
     <tr>

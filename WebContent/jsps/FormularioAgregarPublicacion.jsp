@@ -5,9 +5,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Formulario alta publicacion</title>
+ <!-- Bootstrap Core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
+ 
 <% String idPizarra=(String)session.getAttribute("idPizarra"); %>
 
 <form class="form-horizontal" action="../agregarPublicacion" method="post"> <!--  supongo que este servlet (AgregarPublicacion) y vistas usa admin, publicador y profesor, el filtro controla esos permisos y deja pasar :) -->

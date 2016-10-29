@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	  <!-- Bootstrap Core CSS -->
+		  <!-- Bootstrap Core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
       <!-- Custom CSS -->
     <link href="../css/3-col-portfolio.css" rel="stylesheet">
@@ -9,13 +9,22 @@
     <!-- Bootstrap Core CSS -->
     <link href="../css/timeLine.css" rel="stylesheet">
     
+    
+     <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+    
     <title>Alta cartelera</title>
 </head>
 
 <body>
-    <!-- Page Content -->
-    <div class="container">
+
 <%@ include file="Header.jsp" %>
+
+
+<div class="container">
 <form action="#" method="post">
 
 <div class="input-group">
@@ -29,8 +38,8 @@ La cartelera "padre" la tiene del listado anterior (al cual le diste agregar car
 </div>
 
 </form>
-
 </div>
+
 
 </body>
 
