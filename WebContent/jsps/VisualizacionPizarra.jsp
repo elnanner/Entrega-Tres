@@ -10,7 +10,7 @@
 	<img class="img-responsive" src=<%=cartelera.getPathImage() %> width="700" height="400\" alt="">
 </a>   
 <h3>
-	<a href=<%=cartelera.getNombre()%>> <%=cartelera.getNombre()%> </a> 
+	<a href=<%=cartelera.getNombre()%>> <%=cartelera.getNombre()%></a> 
 	
 </h3>
 <p><%=cartelera.getDescripcion() %></p>    

@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import clases.FuturoFactory;
+import clases.Nota;
 import clases.Pizarra;
 
 /**
@@ -51,9 +52,15 @@ public class agregarPublicacion extends HttpServlet {
 		System.out.println(" ");
 		
 		HttpSession sesion = request.getSession(true);
-		Pizarra pizarra=new FuturoFactory().getPizarraId(idPizarra);
-		sesion.setAttribute("pathActual",pizarra.getPath());
-		sesion.setAttribute("pizarra",pizarra);
+		FuturoFactory factory=new FuturoFactory();
+		Pizarra pizarraId=factory.getPizarraId(idPizarra);
+		String path=pizarraId.getPath().split("/")[2];
+		System.out.println(path);
+		Pizarra pizarraDatos=factory.getPizarra(path);
+		pizarraId.addNota(new Nota(titulo, titulo,descripcion,texto,"N10"));
+		//pizarraDatos.addNota(new Nota(titulo, titulo,descripcion,texto,"N10"));
+		sesion.setAttribute("pathActual",pizarraId.getPath());
+		sesion.setAttribute("pizarra",pizarraId);
 		response.sendRedirect("./Home.jsp");
 		
 	}

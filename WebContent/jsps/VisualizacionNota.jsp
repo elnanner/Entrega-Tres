@@ -14,7 +14,7 @@
   		
 		 <a href="#" data-toggle="modal" data-target=<%= "#"+nota.getId() %> >
 		
-		<img class="img-responsive" src=<%=nota.getPathImage()%> width="700" height="400" alt="">
+		<img class="img-responsive" src=<%=nota.getPathImage()%> width="700" height="400" alt="" title="<%=nota.getTexto() %>">
 	</a>   
 	<h3>
 		<input type="button" class="btn-link" data-toggle="modal" data-target="<%= "#"+nota.getId() %>" value="Oferta de la empresa: <%= nota.getAutor()%>" > 

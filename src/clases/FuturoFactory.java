@@ -71,6 +71,8 @@ public class FuturoFactory {
         	return pizarras.get("Perdidos");	
         case "Otros":
         	return pizarras.get("Otros");	
+        case "Ofertas laborales":
+        	return pizarras.get("Ofertas");
         default:
             return pizarra;//retorno pizarra nula y eso va a generar un error
        }
