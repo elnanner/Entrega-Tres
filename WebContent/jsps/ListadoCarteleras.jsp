@@ -22,9 +22,19 @@
 <body>
 
 <%@ include file="Header.jsp" %>
+<script>
+function eliminar(){
+	$("#output").removeClass(' alert alert-success');
+	//alert($("#a").data("data-custom-value"));
+	$("#output").addClass("alert alert-danger animated fadeInUp").html("borrar cartelera "); //buscar como sacar valor del a
+}; 
+</script>
+
 
 <!-- Page Content -->
     <div class="container">
+     <div id="output"></div>
+    
 <h1 style="text-align:center"> Listado carteleras</h1>
  
 <table class="table table-striped">
@@ -47,11 +57,12 @@
          </div>
         <div>  
          </div>
-          <a href="#">
+          <a href="modificarCartelera.jsp">
           <span class="glyphicon glyphicon-cog"></span>
         </a>
          <div>  
-           <a href="#">
+            
+           <a href="#" onclick="eliminar()" data-custom-value="Materias">
           <span class="glyphicon glyphicon-trash"></span>
         </a>
          </div>
@@ -62,17 +73,17 @@
       <td>Información sobre ofertas laborales</td>
        <td> 
           <div>
-          <a href="#">
+          <a href="altaCartelera.jsp">
           <span class="glyphicon glyphicon-plus"></span>
         </a>
         </div>
         <div>  
-          <a href="#">
+          <a href="modificarCartelera.jsp">
           <span class="glyphicon glyphicon-cog"></span>
         </a>
         </div>
         <div>
-           <a href="#">
+           <a href="#" onclick="eliminar()" data-custom-value="Ofertas">
           <span class="glyphicon glyphicon-trash"></span>
         </a>
         </div>
@@ -83,17 +94,17 @@
       <td>Información que no se encuentra en el resto de las carteleras</td>
       <td> 
       <div>
-          <a href="#">
+          <a href="altaCartelera.jsp">
           <span class="glyphicon glyphicon-plus"></span>
         </a>       
           </div>
           <div>
-          <a href="#">
+          <a href="modificarCartelera.jsp">
           <span class="glyphicon glyphicon-cog"></span>
         </a>
            </div>
            <div>
-           <a href="#">
+           <a href="#" onclick="eliminar()" data-custom-value="Otros">
           <span class="glyphicon glyphicon-trash"></span>
         </a>
         </div>
