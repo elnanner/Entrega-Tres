@@ -13,7 +13,8 @@
 </head>
 
 <body>
-
+    <!-- Page Content -->
+    <div class="container">
 <%@ include file="Header.jsp" %>
 <form action="#" method="post">
 
@@ -29,7 +30,7 @@ La cartelera "padre" la tiene del listado anterior (al cual le diste agregar car
 
 </form>
 
-
+</div>
 
 </body>
 

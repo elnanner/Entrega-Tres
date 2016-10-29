@@ -10,3 +10,5 @@
 		<li role="separator" class="divider"></li>
 		<li><a href="#">Aqu&iacute; otros...</a></li>
 	</ul></li>
+	
+	<!--  SOLO SE VE EN EL HOME! (NO CUANDO ENTRAMOS A ALTA DE CARTELERA) -->
