@@ -20,11 +20,20 @@
 </head>
 
 <body>
-
+<script>
+function eliminar(){
+	/*lo queres mas lindo???*/
+	$("#fila").remove();
+	$("#output").removeClass(' alert alert-success');
+	//alert($("#a").data("data-custom-value"));
+	$("#output").addClass("alert alert-danger animated fadeInUp").html("borrar cartelera "); //buscar como sacar valor del a
+}; 
+</script>	
 <%@ include file="Header.jsp" %>
 
 <!-- Page Content -->
     <div class="container">
+    <div id="output"></div>
 <h1 style="text-align:center"> Listado Publicaciones</h1>
 
 <div> 
@@ -41,23 +50,23 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr id="fila">
       <td>Publicacion 1</td>
       <td>Información sobre cursadas...</td>
        <td> 
         <div>  
          </div>
-          <a href="#">
+          <a href="../jsps/ModificarPublicacion.jsp">
           <span class="glyphicon glyphicon-cog"></span>
         </a>
          <div>  
-           <a href="#">
+           <a href="#" onclick="eliminar()">
           <span class="glyphicon glyphicon-trash"></span>
         </a>
          </div>
       </td>
     </tr>
-    <tr>
+    <tr id="fila">
       <td>Publicacion 2 </td>
       <td>Información sobre finales...</td>
        <td> 
@@ -67,13 +76,13 @@
           <span class="glyphicon glyphicon-cog"></span>
         </a>
          <div>  
-           <a href="#">
+           <a href="#" onclick="eliminar()">
           <span class="glyphicon glyphicon-trash"></span>
         </a>
          </div>
       </td>
     </tr>
-    <tr>
+    <tr id="fila">
       <td>Publicacion 3</td>
       <td>Información sobre eventos...</td>
        <td> 
@@ -83,7 +92,7 @@
           <span class="glyphicon glyphicon-cog"></span>
         </a>
          <div>  
-           <a href="#">
+           <a href="#" onclick="eliminar()">
           <span class="glyphicon glyphicon-trash"></span>
         </a>
          </div>
