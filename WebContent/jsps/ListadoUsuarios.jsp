@@ -38,6 +38,7 @@ function eliminarAdministrador(){
 	//alert($("#a").data("data-custom-value"));
 	$("#output").addClass("alert alert-danger animated fadeInUp").html("borrar cartelera "); //buscar como sacar valor del a
 }; 
+
 </script>
 	<h1 style="text-align:center"> Listado Usuarios</h1>
 	<div class="container">
@@ -59,11 +60,11 @@ function eliminarAdministrador(){
 					<td><a href="#">
         				 <span class="glyphicon glyphicon-cog"> </span>
         				 </a>
-                          <a href="#" onclick="eliminarPublicador()" data-custom-value="Otros">
+                          <a href="#" onclick="eliminarPublicador()">
          				 <span class="glyphicon glyphicon-trash"></span>
      					   </a>    
-     					     <a href="AdministrarPermisosSobrePizarra.jsp" onclick=<%session.setAttribute("userName","Ramiro Ongaro"); %>>
-         				 <span class="glyphicon glyphicon-sunglasses"></span>
+     					     <a href="AdministrarPermisosSobrePizarra.jsp">
+         				 		<span class="glyphicon glyphicon-sunglasses"></span>
      					   </a>
      			    </td>
 				</tr>
@@ -74,10 +75,10 @@ function eliminarAdministrador(){
 					     <a href="#">
         				 <span class="glyphicon glyphicon-cog"> </span>
         				 </a>
-                          <a href="#" onclick="eliminarPublicador()" data-custom-value="Otros">
+                          <a href="#" onclick="eliminarPublicador()">
          				 <span class="glyphicon glyphicon-trash"></span>
      					   </a>    
-     					     <a href="AdministrarPermisosSobrePizarra.jsp" onclick=<%session.setAttribute("userName","Luciano Matsuo"); %> >
+     					     <a href="AdministrarPermisosSobrePizarra.jsp">
          				 <span class="glyphicon glyphicon-sunglasses"></span>
      					   </a>
 					</td>
@@ -98,7 +99,7 @@ function eliminarAdministrador(){
 			<tbody>
 				<tr id="filaA">
 					<td>Ramiro Ongaro</td>
-					<td><a href="#" onclick="eliminarAdministrador()" data-custom-value="Otros">
+					<td><a href="#" onclick="eliminarAdministrador()">
          				 <span class="glyphicon glyphicon-trash"></span>
      					   </a> 
      					     <a href="#">
@@ -108,7 +109,7 @@ function eliminarAdministrador(){
 				</tr>
 				<tr id="filaA">
 					<td>Luciano Matsuo</td>
-					<td><a href="#" onclick="eliminarAdministrador()" data-custom-value="Otros">
+					<td><a href="#" onclick="eliminarAdministrador()">
          				 <span class="glyphicon glyphicon-trash"></span>
      					   </a> 
      					     <a href="#" >

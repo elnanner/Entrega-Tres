@@ -26,11 +26,11 @@
 	<h1 style="text-align:center"> Administrar permisos sobre carteleras</h1>
 	<div class="container">
 	<form method="post" action="#">
-		<h4 style="text-align:center">     <% if(session.getAttribute("userName")==null){ %>
+		<h4 style="text-align:center">       Nombre de usuario <%--<% if(session.getAttribute("userName")==null){ 
 		                                             Nombre de usuario
 		                                       <% }else{ %>
 		                                               <%= session.getAttribute("userName") %>
-		                                        <%} %>
+		                                        <%} %> --%>
 		 </h4>                       
 		<table class="table table-striped">
 			<thead>

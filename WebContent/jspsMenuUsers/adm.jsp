@@ -10,6 +10,8 @@
 		<li><a href="<%=request.getContextPath()+"/jsps/ListadoCarteleras.jsp"%>">Operaciones Cartelera(ABM)</a></li>
 		<li><a href="<%=pathRootADM %>/jsps/ListadoPublicaciones.jsp"">Listado publicaciones</a></li>
 		<li><a href="<%=pathRootADM %>/jsps/CrearTemplate.jsp">Crear template</a></li>
+		<li><a href="<%=request.getContextPath()+"/jsps/ListadoUsuarios.jsp"%>">Listado Usuarios (BM)</a></li>
+		<li><a href="<%=request.getContextPath()+"/jsps/AltaUsuario.jsp"%>">Alta usuarios</a></li>
 		<li role="separator" class="divider"></li>
 		<li><a href="#">Aqu&iacute; otros...</a></li>
 	</ul></li>
