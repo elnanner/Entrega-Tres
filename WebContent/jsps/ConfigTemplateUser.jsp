@@ -16,7 +16,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
     
-    <title>Crear Template</title>
+    <title>Configuraci&oacute;n</title>
     <style>
     	#midiv{
     		border:2px solid black;
@@ -65,7 +65,7 @@
     
     </script>
 <%@ include file="Header.jsp" %>
-<h1 style="text-align:center"> Configuraci&oacute;n p&aacute;gina </h1>
+<h1 style="text-align:center"> Configuraci&oacute;n usuario </h1>
 
 <div class="container">
 	

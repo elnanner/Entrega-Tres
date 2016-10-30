@@ -36,7 +36,7 @@
                     <%if(usuario!=null){ %>	
                     	<li ><a href="#"><%=  usuario.getName() %></a></li>
                     	<li><a href="<%=pathRoot %>/Logout">Logout</a></li>
-                    	<li> <a href="/Configuracion"> <span class="glyphicon glyphicon-edit"></span></a>
+                    	<li> <a href="<%=request.getContextPath()+"/jsps/ConfigTemplateUser.jsp"%>"> <span class="glyphicon glyphicon-edit"></span></a>
                     	<% }%>                                      
 </ul>
 </div>
