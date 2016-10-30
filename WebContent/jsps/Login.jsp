@@ -39,7 +39,7 @@ function error(){
 	 	<div class="avatar"></div>
 		<div class="form-box">
 			<form action="../Login" method="post">
-        		<input name="user" type="text" placeholder="username" required>
+        		<input name="user" type="text" placeholder="username" autofocus required>
           	  	<input type="password" placeholder="password">
           		<button class="btn btn-info btn-block login" type="submit">Login</button>
       	 	</form>
