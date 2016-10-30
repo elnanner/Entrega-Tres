@@ -4,6 +4,5 @@
 	data-toggle="dropdown" role="button" aria-haspopup="true"
 	aria-expanded="false">Operaciones Alumno <span class="caret"></span></a>
 	<ul class="dropdown-menu">
-		<li><a href="#">Mmmmm me parece que aca no va nada para alumno</a></li>
-		
+		<li><a href="<%=request.getContextPath()+"/jsps/ListadoIntereses.jsp"%>">Intereses</a></li>	
 	</ul></li>

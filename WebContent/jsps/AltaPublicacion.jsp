@@ -49,10 +49,23 @@
 	    
 	  </div>
 	  <div class="checkbox">
-    <label>
+	  <label>
       <input type="checkbox" value="1"> Deseo que se pueda comentar en esta publicaci&oacute;n
     </label>
-  </div>
+    </div>
+    
+    <div class="form-group">
+    <label for="selectPizarra">Pizarra a la que pertenece la publicaci&oacute;n
+	 <select id="selectPizarra" required>
+  <option value="materias">Materias</option>
+  <option value="ofertas">Ofertas laborales</option>
+  <option value="otros">Otros</option>
+  <option value="perdidos">Perdidos</option>
+</select>
+</label>
+	 </div>
+   
+  
   	<button type="submit" class="btn btn-success">Publicar</button>
 	</form>
 	</div>
