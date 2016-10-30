@@ -25,7 +25,34 @@
 <%@include file="Header.jsp" %>
 	<h1 style="text-align:center"> Listado Alumnos</h1>
 	<div class="container">
+		<h4 style="text-align:center">Tabla 1</h4>
 		<table class="table table-striped">
+			<caption style="text-align:center">Tabla 1</caption>
+			<thead>
+				<tr>
+					<th>Nombre</th>
+					<th>Legajo</th>
+					<th>Otros...</th>
+				</tr>
+			</thead>
+		
+			<tbody>
+				<tr>
+					<td>Ramiro Ongaro</td>
+					<td>5678</td>
+					<td>Saraza...</td>
+				</tr>
+				<tr>
+					<td>Luciano Matsuo</td>
+					<td>1234</td>
+					<td>Saraza...</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<h4 style="text-align:center">Tabla 2</h4>
+		<table class="table table-striped">
+			<caption style="text-align:center">Tabla 2</caption>
 			<thead>
 				<tr>
 					<th>Nombre</th>
