@@ -6,6 +6,17 @@
 <%@ page import="java.util.ArrayList"%>
  <%@ page import="clases.User"%>
  
+ <script>
+ function enviarFormulario(){
+	 if(document.getElementById("comentario").value!=""){
+		 alert("comentario "+document.getElementById("comentario").value+" del user "+document.getElementById("user").value);
+	 }//alert("comentario: ".concat(Document.getElementById("comentario").value));
+	 else{
+		 alert("el comentario no puede ser vacio!");
+	 }
+ }
+ </script>
+ 
 	<%Nota nota= (Nota)session.getAttribute("elementoActual"); %>    
 	
 
@@ -74,10 +85,11 @@
        		    <% } %>
        		    
        		                    <%User user=(User) session.getAttribute("user"); %>
-       		                    <% if(user!=null && user.getType().equals("alu")){ %>  
-                                	<input placeholder="Comment" type="text" style="height:100px" class="form-control" />
-                                	<span class="text-mute">Please wrtie your openion.</span>
-                              	  <button class="btn btn-sm btn-primary pull-right">Save</button>
+       		                    <% if(user!=null && user.getType().equals("alu")){ %>  		                        
+                                	<input placeholder="Escribe un comentario..." id="comentario" type="text" style="height:100px" class="form-control" required/>
+                                	<input id="user" type="hidden" value="<%=user.getName() %>" />
+                                	<span class="text-mute">Queremos saber tu opini&oacute;n</span>
+                              	 <!--  <button class="btn btn-sm btn-primary pull-right">Save</button> -->
                               	 <%} %>
        		    
        		</div>
@@ -85,8 +97,8 @@
       <%} %>
       
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>      
+        <button type="button" class="btn btn-primary" onClick="enviarFormulario()">Comentar</button>
       </div>
     </div>
   </div>
