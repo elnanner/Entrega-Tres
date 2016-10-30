@@ -51,13 +51,13 @@ function eliminar(){
       <td>Información sobre materias</td>
        <td> 
        <div>
-          <a href="altaCartelera.jsp">
+          <a href="AltaCartelera.jsp">
           <span class="glyphicon glyphicon-plus"></span>
         </a>
          </div>
         <div>  
          </div>
-          <a href="modificarCartelera.jsp">
+          <a href="ModificarCartelera.jsp">
           <span class="glyphicon glyphicon-cog"></span>
         </a>
          <div>  
