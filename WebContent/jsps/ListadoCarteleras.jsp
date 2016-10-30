@@ -24,6 +24,8 @@
 <%@ include file="Header.jsp" %>
 <script>
 function eliminar(){
+	/*lo queres mas lindo???*/
+	$("#fila").remove();
 	$("#output").removeClass(' alert alert-success');
 	//alert($("#a").data("data-custom-value"));
 	$("#output").addClass("alert alert-danger animated fadeInUp").html("borrar cartelera "); //buscar como sacar valor del a
@@ -46,7 +48,7 @@ function eliminar(){
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr id="fila">
       <td>Materias</td>
       <td>Información sobre materias</td>
        <td> 
@@ -68,7 +70,7 @@ function eliminar(){
          </div>
       </td>
     </tr>
-    <tr>
+    <tr id="fila">
       <td>Ofertas laborales</td>
       <td>Información sobre ofertas laborales</td>
        <td> 
@@ -89,7 +91,7 @@ function eliminar(){
         </div>
       </td>
     </tr>
-    <tr>
+    <tr id="fila">
       <td>Otros</td>
       <td>Información que no se encuentra en el resto de las carteleras</td>
       <td> 
