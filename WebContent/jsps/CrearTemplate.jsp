@@ -17,7 +17,22 @@
     <script src="../js/bootstrap.min.js"></script>
     
     <title>Crear Template</title>
+    <style>
+    	#midiv{
+    		border:2px solid black;
+    		margin:10px;
+    		width:250px;
+    		height: 250px;
+    	}
+    	
+    	img{
+    		height:33%;
+    		width:33%;
+    		
+    		
+    	}
     
+    </style>
 </head>
 
 <body>
@@ -42,7 +57,7 @@
     		midiv = '<div class="col-md-4 portfolio-item"></div>';
     		for (var i = 0; i < 3; i++) {
     			
-				$(".template-div").append('<div id=class="col-md-4 portfolio-item">div</div>');
+				$(".template-div").append('<div id="midiv" class="col-md-4 portfolio-item"></div>');
 			}
     		$("#default").remove();
     		$("#toggle").text("Editar Página"); 
@@ -50,16 +65,24 @@
     
     </script>
 <%@ include file="Header.jsp" %>
-<h1 style="text-align:center"> Alta Cartelera</h1>
+<h1 style="text-align:center"> Configuraci&oacute;n p&aacute;gina </h1>
 
 <div class="container">
-	<div id="btn-toggle"><button id="toggle" class="" onclick="modo()">Editar P&aacute;gina</button></div>
-	<br />
-	<div id="default"></div>
-	<br />
-	<div class="template-div"></div>
+	
+	<form>
+	  <h3>2x2</h3>
+	  <div class="row"> <input type="radio" name="gender" value="2x2" checked><img src="<%=request.getContextPath()+"/images/2x2.jpg"%>" alt="" /></div>	
+	  
+	  <h3>2x2</h3>
+	  <div class="row"><input type="radio" name="gender" value="2x3"> <img src="<%=request.getContextPath()+"/images/2x3.jpg"%>" alt="" /></div>
+	  
+	  <h3>Default</h3>
+	  <div class="row"><input type="radio" name="gender" value="3x1"><img src="<%=request.getContextPath()+"/images/3x1.jpg"%>" alt="" /></div>
+	  <button class="submit btn btn-success">Aplicar Configuraci&oacute;n</button>
+	  </form>
 </div>
 
+	<%@include file="Footer.jsp" %>
 
 </body>
 
