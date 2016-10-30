@@ -47,5 +47,10 @@ function error(){
  	</div>
 </div>
 
+
+<div>
+  <a class="btn btn-info btn-block" href="../Home">ir al home</a>
+</div>
+
 </body>
 </html>

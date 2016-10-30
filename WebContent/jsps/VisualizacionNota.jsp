@@ -18,7 +18,7 @@
  </script>
  
 	<%Nota nota= (Nota)session.getAttribute("elementoActual"); %>    
-	
+	   <%User user=(User) session.getAttribute("user"); %>
 
   <!--    <a href="#" data-toggle="modal" data-target="#myModal"> -->
   		<%--  <a href="#" data-toggle="modal" data-target="<%="#"+nota.getAutor() %>">--%>
@@ -84,7 +84,7 @@
        		            </ul>
        		    <% } %>
        		    
-       		                    <%User user=(User) session.getAttribute("user"); %>
+       		                 
        		                    <% if(user!=null && user.getType().equals("alu")){ %>  		                        
                                 	<input placeholder="Escribe un comentario..." id="comentario" type="text" style="height:100px" class="form-control" required/>
                                 	<input id="user" type="hidden" value="<%=user.getName() %>" />
@@ -97,8 +97,10 @@
       <%} %>
       
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>      
-        <button type="button" class="btn btn-primary" onClick="enviarFormulario()">Comentar</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>  
+          <% if(user!=null && user.getType().equals("alu")){ %>      
+       			 <button type="button" class="btn btn-primary" onClick="enviarFormulario()">Comentar</button>
+        <%} %>
       </div>
     </div>
   </div>
