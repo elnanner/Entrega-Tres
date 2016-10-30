@@ -22,22 +22,24 @@
 <body>
 
 <%@ include file="Header.jsp" %>
-<h1 style="text-align:center"> formualrio alta cartelera</h1>
+<h1 style="text-align:center"> Alta Cartelera</h1>
 
 <div class="container">
-<form action="#" method="post">
-
-<div class="input-group">
-<label for="name">Name:
-<input class="form-control" placeholder="Recipient's username" type="text" id="name" name="name" required> </label>
-<label for="descrip">Descripción:
-<input type="text"  class="form-control" id="descrip" placeholder="Recipient's username"  name="descripcion" required>
- </label><div>
-La cartelera "padre" la tiene del listado anterior (al cual le diste agregar cartelera)
-</div>
-</div>
-
-</form>
+	<form action="#" method="post">
+	
+		<div class="form-group">
+			<label for="name">Name:</label>
+			<input class="form-control" placeholder="Ingrese Nombre Cartelera" type="text" id="name" name="name" required>
+		</div>
+		<div class="form-group">	
+			<label for="descrip">Descripción:</label>
+			<input type="text"  class="form-control" id="descrip" placeholder="Breve descripción de la cartelera"  name="descripcion" required>
+			 
+		</div>
+		<p>La cartelera "padre" la tiene del listado anterior (al cual le diste agregar cartelera)</p>
+	
+	<button type="submit" class="btn btn-success">Publicar</button>
+	</form>
 </div>
 
 
