@@ -38,7 +38,8 @@ public class redirectFormAltaPublicacion extends HttpServlet {
 		String idPizarra=request.getParameter("idPizarra");
 		HttpSession sesion = request.getSession(true);
 		sesion.setAttribute("idPizarra",idPizarra);
-		response.sendRedirect("./jsps/FormularioAgregarPublicacion.jsp");
+		//response.sendRedirect("./jsps/FormularioAgregarPublicacion.jsp");
+		response.sendRedirect("./jsps/AltaPublicacion.jsp");
 	}
 
 }

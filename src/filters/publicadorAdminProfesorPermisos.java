@@ -18,7 +18,7 @@ import clases.User;
 /**
  * Servlet Filter implementation class publicadorAdminProfesorPermisos
  */
-@WebFilter({"/redirectFormAltaPublicacion","/agregarPublicacion","/jsps/FormularioAgregarPublicacion.jsp"})
+@WebFilter({"/redirectFormAltaPublicacion","/agregarPublicacion","/jsps/FormularioAgregarPublicacion.jsp","/jsps/AltaPublicacion.jsp"})
 public class publicadorAdminProfesorPermisos implements Filter {
 
     /**
