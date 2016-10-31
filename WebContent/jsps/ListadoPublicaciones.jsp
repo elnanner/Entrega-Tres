@@ -72,7 +72,7 @@ function eliminar(){
        <td> 
         <div>  
          </div>
-          <a href="#">
+          <a href="../jsps/ModificarPublicacion.jsp">
           <span class="glyphicon glyphicon-cog"></span>
         </a>
          <div>  
@@ -88,7 +88,7 @@ function eliminar(){
        <td> 
         <div>  
          </div>
-          <a href="#">
+          <a href="../jsps/ModificarPublicacion.jsp">
           <span class="glyphicon glyphicon-cog"></span>
         </a>
          <div>  

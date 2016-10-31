@@ -75,12 +75,12 @@ function eliminar(){
       <td>Información sobre ofertas laborales</td>
        <td> 
           <div>
-          <a href="altaCartelera.jsp">
+          <a href="AltaCartelera.jsp">
           <span class="glyphicon glyphicon-plus"></span>
         </a>
         </div>
         <div>  
-          <a href="modificarCartelera.jsp">
+          <a href="ModificarCartelera.jsp">
           <span class="glyphicon glyphicon-cog"></span>
         </a>
         </div>
@@ -96,12 +96,12 @@ function eliminar(){
       <td>Información que no se encuentra en el resto de las carteleras</td>
       <td> 
       <div>
-          <a href="altaCartelera.jsp">
+          <a href="AltaCartelera.jsp">
           <span class="glyphicon glyphicon-plus"></span>
         </a>       
           </div>
           <div>
-          <a href="modificarCartelera.jsp">
+          <a href="ModificarCartelera.jsp">
           <span class="glyphicon glyphicon-cog"></span>
         </a>
            </div>
